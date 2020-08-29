@@ -39,3 +39,38 @@ section.hero{
         border-color: $pure;
     }
 }
+
+@media (min-width: 1280px){
+    .container {
+        max-width: 1024px;
+    }
+}
+
+.btn-primary{
+    background-color: $primary;
+
+    &:hover{
+        background: $primary-hover;
+        transition: $smooth;
+    }
+}
+
+section.cart{
+    background-color: $secondary;
+
+    .amount{
+        color: $primary;
+    }
+}
+
+section.login{
+    background-color: $secondary;
+    min-height: calc(100vh - 86px);
+
+    a{
+        color: $primary;
+        &:hover{
+            color:$primary-hover;
+        }
+    }
+}
